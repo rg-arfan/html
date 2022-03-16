@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&display=swap");
+    </style>
   </head>
   <body id="home">
     <br />
     <header>
-      <table width="100%">
+      <table width="100%" class="link">
         <tr>
           <td width="9%"></td>
           <td width="40%"><img src="img/logo.svg" alt="" /></td>
@@ -20,11 +24,8 @@
           <td width="9%"></td>
         </tr>
       </table>
-      z
-      <br />
-      <br />
-      <br />
-      <table width="100%">
+
+      <table width="100%" class="text">
         <tr>
           <td width="10%"></td>
           <td width="40%">
@@ -35,10 +36,6 @@
               for everyone
             </p>
             <button>Consult today</button>
-            <br />
-            <br />
-            <br />
-            <br />
           </td>
           <td width="40%">
             <img src="img/illustration.svg" alt="" width="600" />
@@ -48,46 +45,50 @@
       </table>
     </header>
 
-    <section id="our_service">
-      <br /><br /><br />
-      <br /><br /><br />
+    <section id="our_service" class="our_service">
       <center>
         <h2>Our Services</h2>
+        <hr />
         <p>
           We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment <br />
           with our highly qualified doctors you can consult with us which type of service is suitable for your health
         </p>
       </center>
-      <br /><br /><br />
-      <table width="100%">
+      <table width="100%" class="service">
         <tr>
           <td width="15%"></td>
           <td>
-            <img src="img/1.svg" alt="" width="40" />
-            <h3>Search Doctor</h3>
-            <p>
-              Choose your doctor from thousands <br />of specialist, general, and trusted <br />
-              hospitals
-            </p>
+            <div class="card">
+              <img src="img/1.svg" alt="" width="80" />
+              <h3>Search Doctor</h3>
+              <p>
+                Choose your doctor from thousands <br />of specialist, general, and trusted <br />
+                hospitals
+              </p>
+            </div>
           </td>
           <td width="5%"></td>
           <td>
-            <img src="img/2.svg" alt="" width="40" />
-            <h3>Online pharmacy</h3>
-            <p>
-              Buy your medicines with our <br />mobile application with a simple <br />
-              delivery system
-            </p>
+            <div class="card">
+              <img src="img/2.svg" alt="" width="60" />
+              <h3>Online pharmacy</h3>
+              <p>
+                Buy your medicines with our <br />mobile application with a simple <br />
+                delivery system
+              </p>
+            </div>
           </td>
           <td width="5%"></td>
           <td>
-            <img src="img/3.svg" alt="" width="40" />
-            <h3>Consultan</h3>
-            <p>
-              Free consultation with our trusted <br />
-              doctors and get the best <br />
-              recomendations
-            </p>
+            <div class="card">
+              <img src="img/3.svg" alt="" width="60" />
+              <h3>Consultan</h3>
+              <p>
+                Free consultation with our trusted <br />
+                doctors and get the best <br />
+                recomendations
+              </p>
+            </div>
           </td>
           <td width="5%"></td>
         </tr>
@@ -101,23 +102,24 @@
     <br /><br />
     <br /><br />
     <br />
-    <section id="contact_us">
+    <section id="contact_us" class="contact_us">
       <table width="100%">
         <tr>
           <td width="15%"></td>
           <td width="40%">
             <p>Contact us</p>
             <h2>Make an Appointmen</h2>
+            <hr>
             <form action="ok.html" method="get" target="_blank">
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname" /><br /><br />
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname" /><br /><br />
-              <label for="email">Your email:</label>
-              <input type="text" id="email" name="email" /><br /><br />
-              <label for="textarea">Message:</label>
+              <label for="fname"></label>
+              <input type="text" id="fname" name="fname" placeholder="First Name" /><br /><br />
+              <label for="lname"></label>
+              <input type="text" id="lname" name="lname" placeholder="Last Name"/><br /><br />
+              <label for="email"></label>
+              <input type="text" id="email" name="email" placeholder="youremail@gmail.com"/><br /><br />
+              <label for="textarea"></label>
               <textarea name="textarea" id="" cols="30" rows="10"></textarea><br /><br />
-              <input type="submit" value="Send" />
+              <button type="submit" />Send</button>
             </form>
             <br />
             <br />
@@ -130,45 +132,21 @@
       </table>
     </section>
     <br /><br /><br /><br /><br /><br />
-    <footer>
+    <footer class="footer">
       <table width="100%">
         <tr>
           <td width="10%"></td>
           <td width="40%">
-            <h3>Trafalgar</h3>
-            <p>
-              Trafalgar provides progressive, and affordable <br />
-              healthcare, accessible on mobile and online <br />
-              for everyone
-            </p>
-            <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+            <h3 class="foot">Trafalgar</h3>
           </td>
           <td width="10%">
             <h4>Company</h4>
-            <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Testimonial</a></li>
-              <li><a href="">Find a doctor</a></li>
-              <li><a href="">Find a doctor</a></li>
-            </ul>
           </td>
           <td width="10%">
             <h4>Region</h4>
-            <ul>
-              <li><a href="">Indonesia</a></li>
-              <li><a href="">Malaysia</a></li>
-              <li><a href="">Hongkong</a></li>
-              <li><a href="">Singapura</a></li>
-            </ul>
           </td>
           <td width="10%">
             <h4>Help</h4>
-            <ul>
-              <li><a href="">Help center</a></li>
-              <li><a href="">Contact support</a></li>
-              <li><a href="">Insntruction</a></li>
-              <li><a href="">Insntruction</a></li>
-            </ul>
           </td>
           <td width="10%"></td>
         </tr>
